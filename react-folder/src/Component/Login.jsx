@@ -38,7 +38,7 @@ export default function Login() {
     }
 
  return (
-     <div id="Login_div">
+     <div id="Login_Join_div">
        <form onSubmit={onSubmit} id="Login_form">
         <h3>아이디, 비밀번호를 입력해 주세요.</h3>
 

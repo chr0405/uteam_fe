@@ -44,7 +44,7 @@ export default function Join() {
         navigate('/Main');
     }
     return (
-        <div>
+        <div id="Login_Join_div">
         <h3>닉네임, 아이디, 비밀번호를 입력해 주세요.</h3>
         <form onSubmit={onSubmit}>
 

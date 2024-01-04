@@ -5,7 +5,7 @@ import { TfiWrite } from "react-icons/tfi";
 
 export default function SearchAndWrite() {
   return (
-    <div>
+    <>
         <Link to="/SearchPage">
         <BiSearch size="20" />
         </Link>
@@ -13,6 +13,6 @@ export default function SearchAndWrite() {
         <Link to="/WritePage">
         <TfiWrite size="20" />
         </Link>
-    </div>
+    </>
   )
 }

@@ -33,8 +33,11 @@ export default function Cleaning({value, setValue}) {
   }, []);
 
   return (
-    <div>청소
-      <SearchAndWrite/>
+    <div>
+      <div id="Category_div">
+        <p>청소</p>
+        <SearchAndWrite/>
+      </div>
       <ul>
           <li>
               <span><Link to="/CleaningDummy">욕실 곰팡이 간단히 해결하는 방법</Link></span>

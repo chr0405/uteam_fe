@@ -16,7 +16,7 @@
 }
 
 /* Basic styling for the form container */
-#Login_div {
+#Login_Join_div {
   max-width: 400px;
   margin: 50px auto;
   padding: 20px;
@@ -26,27 +26,27 @@
 }
 
 /* Styling for the form */
-form {
+#Login_Join_div form {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 /* Styling for the form headings */
-h3 {
+#Login_Join_div h3 {
   font-size: 18px;
   margin-bottom: 15px;
   text-align: center;
 }
 
 /* Styling for labels */
-label {
+#Login_Join_div label {
   font-size: 14px;
   margin-top: 10px;
 }
 
 /* Styling for input fields */
-input {
+#Login_Join_div input {
   width: 100%;
   padding: 8px;
   margin: 5px 0 15px 0;
@@ -56,14 +56,14 @@ input {
 }
 
 /* Styling for the password validation message */
-p {
+#Login_Join_div p {
   color: red;
   font-size: 12px;
   margin: 5px 0 15px 0;
 }
 
 /* Styling for the submit button */
-input[type='submit'] {
+#Login_Join_div input[type='submit'] {
   width: 100%;
   padding: 10px;
   background-color: #4caf50;
@@ -74,25 +74,25 @@ input[type='submit'] {
 }
 
 /* Styling for the disabled submit button */
-input[type='submit']:disabled {
+#Login_Join_div input[type='submit']:disabled {
   background-color: #ccc;
   cursor: not-allowed;
 }
 
 /* Styling for the link to the registration page */
-span {
+#Login_Join_div span {
   font-size: 14px;
   margin-top: 10px;
 }
 
 /* Styling for the link within the span */
-span a {
+#Login_Join_div span a {
   color: #3498db;
   text-decoration: none;
 }
 
 /* Styling for the link hover effect */
-span a:hover {
+#Login_Join_div span a:hover {
   text-decoration: underline;
 }
 
@@ -121,4 +121,13 @@ span a:hover {
   width: 70px; /* Adjust the width of the images as needed */
   height: 70px; /* Adjust the height of the images as needed */
   margin-right: 10px; /* Adjust the spacing between image and text */
+}
+
+/* Category */
+#Category_div{
+  background-color: rgb(255, 236, 227);
+}
+
+#Category_div p{
+  display: inline;
 }
