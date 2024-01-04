@@ -2,7 +2,7 @@ import React from 'react'
 import { useState } from 'react'
 import { useNavigate } from "react-router-dom";
 
-export default function Join({ isLoggedin, setIsLoggedin }) {
+export default function Join() {
     const navigate = useNavigate();
 
     const password_check = /^(?=.*[a-zA-Z])(?=.*[0-9])(?=.*[!@#$%^&*?_]).{8,16}$/;
@@ -41,8 +41,7 @@ export default function Join({ isLoggedin, setIsLoggedin }) {
 
     const onSubmit = (event) =>{
         event.preventDefault();
-        setIsLoggedin(true);
-        navigate('/');
+        navigate('/Main');
     }
     return (
         <div>

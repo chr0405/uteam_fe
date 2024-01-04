@@ -1,43 +1,49 @@
 import React from 'react'
-import Basic from '../Img/Basic.png';
 import { Link } from 'react-router-dom'
 
-export default function Main() {
+import Cook from '../Img/Cook.png';
+import Cleaning from '../Img/Cleaning.png';
+import Interior from '../Img/Interior.png';
+import Storage from '../Img/Storage.png';
+import Contract from '../Img/Contract.png';
+import Goods from '../Img/Goods.png';
+
+export default function Main({value, setValue}) {
   return (
     <div className="Main">
         <Link to="/Cook">
             <button>
-                <img src={Basic} alt="Cook" width='10' height='10'/>
+                <img src={Cook} alt="Cook"/>
             </button>
         </Link>
         
         <Link to="/Cleaning">
             <button>
-                <img src={Basic} alt="Cleaning" width='10' height='10'/>
+                <img src={Cleaning} alt="Cleaning"/>
             </button>
         </Link>
 
         <Link to="/Interior">
             <button>
-                <img src={Basic} alt="Interior" width='10' height='10'/>
+                <img src={Interior} alt="Interior"/>
             </button>
         </Link>
 
         <Link to="/Storage">
             <button>
-                <img src={Basic} alt="Storage" width='10' height='10'/>
+                <img src={Storage} alt="Storage"/>
             </button>            
         </Link>
 
         <Link to="/Contract">
             <button>
-                <img src={Basic} alt="Contract" width='10' height='10'/>
+                <img src={Contract} alt="Contract"/>
             </button>
         </Link>
 
         <Link to="/Goods">
             <button>
-                <img src={Basic} alt="Goods" width='10' height='10'/>
+                <img src={Goods} alt="Goods"/>
             </button>
         </Link>
     </div>

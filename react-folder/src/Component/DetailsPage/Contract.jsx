@@ -1,10 +1,10 @@
 import React from 'react'
-import Search from './SearchAndWrite'
+import SearchAndWrite from './SearchAndWrite'
 
 export default function Contract() {
   return (
-    <div>Contract
-      <Search/>
+    <div>계약
+      <SearchAndWrite/>
     </div>
   )
 }

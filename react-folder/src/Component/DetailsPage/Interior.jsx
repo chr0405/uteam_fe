@@ -3,7 +3,7 @@ import SearchAndWrite from './SearchAndWrite'
 
 export default function Interior() {
   return (
-    <div>Interior
+    <div>인테리어
       <SearchAndWrite/>
     </div>
   )

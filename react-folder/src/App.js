@@ -1,5 +1,5 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { useEffect, useState } from "react";
+import { useEffect, useState} from "react";
 import Header from "./Component/Header";
 import Login from "./Component/Login"
 import Join from "./Component/Join"
@@ -16,6 +16,8 @@ import Storage from "./Component/DetailsPage/Storage"
 
 function App() {
 
+  const [value, setValue] = useState(0);
+
   function setScreenSize() {
     let vh = window.innerHeight * 0.01;
     document.documentElement.style.setProperty("--vh", `${vh}px`);
@@ -23,21 +25,19 @@ function App() {
   useEffect(() => {
     setScreenSize();
   });
-
-  const [isLoggedin, setIsLoggedin] = useState(false);
   
   return (
     <div className="App">
       <BrowserRouter>
-        <Header isLoggedin={isLoggedin} setIsLoggedin={setIsLoggedin}/>
+        <Header/>
         <Routes>
-          <Route path="/Login" element={<Login isLoggedin={isLoggedin} setIsLoggedin={setIsLoggedin}/>}/>
-          <Route path="/Join" element={<Join isLoggedin={isLoggedin} setIsLoggedin={setIsLoggedin}/>}/>
-          <Route path="/SearchPage" element={<SearchPage/>}/>
+          <Route path="/" element={<Login/>}/>
+          <Route path="/Join" element={<Join/>}/>
+          <Route path="/SearchPage" element={<SearchPage value={value} setValue={setValue}/>}/>
           <Route path="/WritePage" element={<WritePage/>}/>
 
-          <Route path="/" element={<Main/>}/>
-          <Route path="/Cleaning" element={<Cleaning/>}/>
+          <Route path="/Main" element={<Main value={value} setValue={setValue}/>}/>
+          <Route path="/Cleaning" element={<Cleaning value={value} setValue={setValue}/>}/>
           <Route path="/Contract" element={<Contract/>}/>
           <Route path="/Cook" element={<Cook/>}/>
           <Route path="/Goods" element={<Goods/>}/>

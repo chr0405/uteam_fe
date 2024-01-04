@@ -3,7 +3,7 @@ import { useState} from 'react'
 import { Link } from 'react-router-dom'
 import { useNavigate } from "react-router-dom";
 
-export default function Login({ isLoggedin, setIsLoggedin }) {
+export default function Login() {
     const navigate = useNavigate();
 
     const password_check = /^(?=.*[a-zA-Z])(?=.*[0-9])(?=.*[!@#$%^&*?_]).{8,16}$/;
@@ -34,14 +34,13 @@ export default function Login({ isLoggedin, setIsLoggedin }) {
 
     const onSubmit = (event) =>{
         event.preventDefault();
-        setIsLoggedin(true);
-        navigate('/');
+        navigate('/Main');
     }
 
  return (
-     <div>
-       <h3>아이디, 비밀번호를 입력해 주세요.</h3>
-       <form onSubmit={onSubmit}>
+     <div id="Login_div">
+       <form onSubmit={onSubmit} id="Login_form">
+        <h3>아이디, 비밀번호를 입력해 주세요.</h3>
 
          <label>아이디</label>
          <input value={id} onChange={onCheckId}></input>

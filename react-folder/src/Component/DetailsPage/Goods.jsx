@@ -4,7 +4,7 @@ import SearchAndWrite from './SearchAndWrite'
 
 export default function Goods() {
   return (
-    <div>Goods
+    <div>용품추천
       <SearchAndWrite/>
     </div>
   )

@@ -14,3 +14,111 @@
 #LogoImg{
   width: 10%;
 }
+
+/* Basic styling for the form container */
+#Login_div {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for the form */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Styling for the form headings */
+h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+/* Styling for labels */
+label {
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+/* Styling for input fields */
+input {
+  width: 100%;
+  padding: 8px;
+  margin: 5px 0 15px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Styling for the password validation message */
+p {
+  color: red;
+  font-size: 12px;
+  margin: 5px 0 15px 0;
+}
+
+/* Styling for the submit button */
+input[type='submit'] {
+  width: 100%;
+  padding: 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Styling for the disabled submit button */
+input[type='submit']:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Styling for the link to the registration page */
+span {
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+/* Styling for the link within the span */
+span a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+/* Styling for the link hover effect */
+span a:hover {
+  text-decoration: underline;
+}
+
+/* Main */
+
+.Main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px; /* Adjust the gap between buttons as needed */
+}
+
+.Main button {
+  width: 100%;
+  height: 220px; /* Adjust the height of the buttons as needed */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f5f5f5; /* Button background color */
+  color: white; /* Button text color */
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.Main button img {
+  width: 70px; /* Adjust the width of the images as needed */
+  height: 70px; /* Adjust the height of the images as needed */
+  margin-right: 10px; /* Adjust the spacing between image and text */
+}

@@ -4,7 +4,8 @@ import SearchAndWrite from './SearchAndWrite'
 
 export default function Storage() {
   return (
-    <div>Storage
+    <div>
+      <p>수납</p>
       <SearchAndWrite/>
     </div>
   )
